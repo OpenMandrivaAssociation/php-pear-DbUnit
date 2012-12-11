@@ -72,3 +72,17 @@ fi
 %{_datadir}/pear/PHPUnit/Extensions/Database
 %{_datadir}/pear/packages/DbUnit.xml
 
+
+
+%changelog
+* Fri Dec 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.1.1-2mdv2012.0
++ Revision: 741934
+- fix major breakage by careless packager
+
+* Wed Nov 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.1.1-1
++ Revision: 730865
+- import php-pear-DbUnit
+
+
+* Wed Nov 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.1.1-1mdv2010.2
+- initial Mandriva package
