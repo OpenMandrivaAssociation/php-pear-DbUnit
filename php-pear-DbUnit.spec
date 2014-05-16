@@ -1,6 +1,8 @@
 %define  upstream_name DbUnit
+%define __noautoreq /usr/bin/php
 
 Summary:	DbUnit port for PHP/PHPUnit to support database interaction testing
+
 Name:		php-pear-%{upstream_name}
 Version:	1.1.1
 Release:	4
@@ -50,7 +52,6 @@ install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 
 %files
-%defattr(-,root,root)
 %doc %{upstream_name}-%{version}/ChangeLog.markdown
 %doc %{upstream_name}-%{version}/LICENSE
 %{_bindir}/dbunit
@@ -59,15 +60,3 @@ install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 
 
-%changelog
-* Fri Dec 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.1.1-2mdv2012.0
-+ Revision: 741934
-- fix major breakage by careless packager
-
-* Wed Nov 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.1.1-1
-+ Revision: 730865
-- import php-pear-DbUnit
-
-
-* Wed Nov 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.1.1-1mdv2010.2
-- initial Mandriva package
