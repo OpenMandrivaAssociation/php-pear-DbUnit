@@ -5,7 +5,7 @@ Summary:	DbUnit port for PHP/PHPUnit to support database interaction testing
 
 Name:		php-pear-%{upstream_name}
 Version:	1.1.1
-Release:	4
+Release:	5
 License:	BSD
 Group:		Development/PHP
 URL:		http://www.phpunit.de/
